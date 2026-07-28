@@ -137,8 +137,8 @@ function exchange_matrix(ups, dns, nu, nd, N, i::Int, j::Int)
             D1 = setdiff(Dset, [j])
             r2 = iseven(count(u -> u < j, Uset)) ? 1.0 : -1.0
             U1 = sort([Uset; j])
-            U2 = setdiff(U1, [i])
             r3 = iseven(count(u -> u < i, U1)) ? 1.0 : -1.0
+            U2 = setdiff(U1, [i])
             r4 = iseven(length(U2) + count(d -> d < i, D1)) ? 1.0 : -1.0
             Unew = sort(U2)
             Dnew = sort([D1; i])
