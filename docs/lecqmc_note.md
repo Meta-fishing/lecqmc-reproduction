@@ -191,11 +191,11 @@ Julia 实现（`src/LECQMC.jl`，约 800 行）+ 精确对角化模块（`ed/ed.
 
 ## 8. Benchmark 结果
 
-（见下各节，图件 `../results/figures/`。）
+（见下各节，图件 `../figures/`。）
 
 ### 8.1 Fig S2：与精确对角化（ED）的直接对比
 
-体系：二维正方格子 $L=4$（$N=16$），$N_\uparrow=N_\downarrow=1$（$N_e=2$），$U=2t$，$T=0.05t$（$\beta=20$，$\Delta\tau=0.05$，$L_\tau=400$）。ED 用正则系综全谱求和（`ed/ed.jl`，已经二站解析解验证）。LEC-QMC：1000 热化 + 40000 测量 sweep，20 块 blocking 误差棒。全部 16 个位点、三种关联函数（电荷 $\langle n_1n_j\rangle$、纵自旋 $\langle S^z_1S^z_j\rangle$、横自旋 $\langle S^x_1S^x_j+S^y_1S^y_j\rangle$）共 48 个数据点与 ED 在误差棒内一致（见 `results/figures/fig_s2_ed.svg`），$\langle\mathrm{sign}\rangle=1.000$。部分数值（MC(±err) vs ED）：
+体系：二维正方格子 $L=4$（$N=16$），$N_\uparrow=N_\downarrow=1$（$N_e=2$），$U=2t$，$T=0.05t$（$\beta=20$，$\Delta\tau=0.05$，$L_\tau=400$）。ED 用正则系综全谱求和（`ed/ed.jl`，已经二站解析解验证）。LEC-QMC：1000 热化 + 40000 测量 sweep，20 块 blocking 误差棒。全部 16 个位点、三种关联函数（电荷 $\langle n_1n_j\rangle$、纵自旋 $\langle S^z_1S^z_j\rangle$、横自旋 $\langle S^x_1S^x_j+S^y_1S^y_j\rangle$）共 48 个数据点与 ED 在误差棒内一致（见 `../figures/fig_s2_ed.svg`），$\langle\mathrm{sign}\rangle=1.000$。部分数值（MC(±err) vs ED）：
 
 | $j$ | $r$ | $\langle n_1n_j\rangle$ | ED | $\langle S^z_1S^z_j\rangle$ | ED |
 |---|---|---|---|---|---|
@@ -205,7 +205,7 @@ Julia 实现（`src/LECQMC.jl`，约 800 行）+ 精确对角化模块（`ed/ed.
 
 横向关联 $\langle S^xS^x+S^yS^y\rangle$ 依赖§3 的交换估计量，同样全部吻合——这是对算法最敏感的检验之一。
 
-![Fig S2：LEC-QMC 与 ED 的三种关联函数对比](figures/fig_s2_ed.svg)
+![Fig S2：LEC-QMC 与 ED 的三种关联函数对比](../figures/fig_s2_ed.svg)
 
 **分析**：该测试在 $\beta=20$（400 个虚时片）下运行，正是 §5.1 所述失稳会被放大的 regime；48 点全部吻合说明：(i) Fock 态采样（增/删/交换）实现了正确的正则系综分布；(ii) 辅助场更新的锚定方案在长虚时间下数值稳定；(iii) 交换估计量的指标约定正确。$\langle\mathrm{sign}\rangle=1$ 是小体系高符号区，这里的检验精度不受符号涨落干扰。
 
@@ -217,7 +217,7 @@ Julia 实现（`src/LECQMC.jl`，约 800 行）+ 精确对角化模块（`ed/ed.
 - **纵自旋 $\langle S^z_1S^z_j\rangle$**：15/16 点吻合（个别点约 $2\text{–}3\sigma$ 偏差，属 48 点统计涨落的正常范围）✅
 - **横自旋（交换估计量）**：多数点吻合，但若干远距点（$j=9,10$ 等）系统性偏低且误差棒很小，$j=12,15,16$ 误差棒巨大——**这是强耦合下交换估计量的重尾（rare-event）涨落**：$N_e=1$/自旋时 $M_{ij}=Q[i]/Q[\mathrm{occ}]$，当占据位形接近奇异（$|Q[\mathrm{occ}]|\ll1$）时该位形权重极小却贡献巨大的估计量，$\lambda$ 越大尾越重。40000 sweep 不足以平均掉这些罕见事件；按距离合并后整体与 ED 一致（见图），但单点层面需要更长的链。这是统计问题而非算法错误（$U=2$ 时同一估计量 48/48 全对；nn/szz 两个 Fock 对角通道在 $U=7$ 也全对）。
 
-![Fig S2 的 U=7 版本：三通道 vs ED](figures/fig_s2_ed_U7.svg)
+![Fig S2 的 U=7 版本：三通道 vs ED](../figures/fig_s2_ed_U7.svg)
 
 **分析**：强耦合检验确认了算法框架在 $U=7$ 依然正确（对角通道完全吻合、符号保持 1），同时暴露了交换估计量在大 $\lambda$ 下的实际局限——这也是论文未讨论的实操细节。工程对策：低温强耦合下对交换类观测量需要显著加长测量链，或发展重尾稳健的估计/分箱方法。
 
@@ -237,7 +237,7 @@ Julia 实现（`src/LECQMC.jl`，约 800 行）+ 精确对角化模块（`ed/ed.
 
 log-log 拟合（$N\ge400$）：LEC-QMC 斜率 **0.99**（原文 ≈1），标准 DQMC 斜率 **3.24**（原文 ≈3）。与原文 Fig 1 定量对照：$N=1024$ 时 DQMC 约 10 s（原文约 10 s）、$N=1600$ 约 50 s（原文约 50 s）、LEC 在 $N=10^4$ 约 3.5 s（原文约 3 s）——绝对值与两条标度律均吻合。外推到 $N=10^4$，LEC 相对 DQMC 加速约 $5\times10^3$ 倍（原文声称 $>10^4$，同一量级，差异主要来自实现与硬件）。
 
-![Fig 1：sweep 代价标度，LEC-QMC 线性 vs DQMC 三次方](figures/fig1_scaling.svg)
+![Fig 1：sweep 代价标度，LEC-QMC 线性 vs DQMC 三次方](../figures/fig1_scaling.svg)
 
 **分析**：LEC-QMC 斜率 0.99 直接证实了 $O(\beta N N_e^2)$ 复杂度（$\beta,N_e$ 固定时关于 $N$ 线性），与论文主张一致；DQMC 斜率 3.24 略大于 3，是小 $N$ 端固定开销摊薄所致，大趋势清晰。更有意义的是绝对值的一致：我们的 Julia 实现与原文（Siyuan 集群）在每个可比点上相差不到 2 倍，说明实现没有引入额外的渐进或常数因子低效。$N_e\ll N$ 时 LEC 的优势随 $N/N_e$ 线性增长——这正是算法设计的目标 regime。
 
@@ -245,7 +245,7 @@ log-log 拟合（$N\ge400$）：LEC-QMC 斜率 **0.99**（原文 ≈1），标�
 
 ### 8.3 Fig 2：稀薄极限下的符号恢复
 
-体系：二维正方格子 Hubbard，$U=2$，固定 $N_e$ 与 $T$，增大 $L$（密度 $n=N_e/L^2$ 下降）。数据 `results/sign.txt`，图 `results/figures/fig2_sign.svg`。已测点与原文 Fig 2 对应曲线定量一致：
+体系：二维正方格子 Hubbard，$U=2$，固定 $N_e$ 与 $T$，增大 $L$（密度 $n=N_e/L^2$ 下降）。数据 `results/sign.txt`，图 `../figures/fig2_sign.svg`。已测点与原文 Fig 2 对应曲线定量一致：
 
 | $(T, N_e)$ | $1/L$ | $\langle\mathrm{sign}\rangle$（我们） | 原文（读图） |
 |---|---|---|---|
@@ -255,7 +255,7 @@ log-log 拟合（$N\ge400$）：LEC-QMC 斜率 **0.99**（原文 ≈1），标�
 | (0.05, 50) | 0.0312 ($L$=32) | 0.983 | ~1.0 |
 | (0.05, 100) | 0.0625 ($L$=16) | 0.190 | ~0.2（同趋势） |
 
-![Fig 2：稀薄极限下的符号恢复](figures/fig2_sign.svg)
+![Fig 2：稀薄极限下的符号恢复](../figures/fig2_sign.svg)
 
 **分析**：物理结论与原文一致：固定 $N_e$ 随体系增大（趋于稀薄极限），粒子间距超过交换关联长度，负符号的交换过程被抑制，$\langle\mathrm{sign}\rangle\to1$——稀薄费米气体渐近变为玻尔兹曼气体。数值上我们的 $(T,N_e)=(0.05,50)$ 曲线与原文几乎逐点重合（$1/L=0.05$：0.787 vs 约 0.78；$0.0417$：0.980 vs 约 0.95）。$(0.05,100)$ 曲线恢复更慢，与原文的密度依赖趋势一致。受单点运行时长限制，$(0.02,50)$ 低温曲线与更大 $L$ 的点未测（这些点符号更接近 1，不改变结论）。
 
@@ -294,7 +294,7 @@ $S^\parallel$ 八个点全部在约 $1\sigma$ 内与 ED 一致（$T=0.02$ 点因
 
 数值备注：$S^\parallel$ 的交换估计量（$\propto M^\uparrow_{ji}M^\downarrow_{ij}$）在近奇异权重位形下有重尾涨落（观测到单样本量级 $10^3$），低温点需要数万 sweep 才能使 blocking 误差棒收敛；$S^{zz}$ 为 Fock 对角估计量，收敛快得多。
 
-![Fig 4：平带铁磁的结构因子温度演化](figures/fig4_flatband.svg)
+![Fig 4：平带铁磁的结构因子温度演化](../figures/fig4_flatband.svg)
 
 ### 8.5 验证总结与讨论
 
