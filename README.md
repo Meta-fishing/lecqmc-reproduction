@@ -22,17 +22,17 @@
 | Fig 4 | 平带铁磁 | ✅ L=4 全温区与 ED 一致；ED 与原文曲线全温区一致；Szz→1/16 解析值 |
 
 ### Fig S2：LEC-QMC vs ED（U=2 与 U=7）
-![Fig S2](figures/fig_s2_ed.png)
-![Fig S2 U7](figures/fig_s2_ed_U7.png)
+![Fig S2](figures/fig_s2_ed.svg)
+![Fig S2 U7](figures/fig_s2_ed_U7.svg)
 
 ### Fig 1：sweep 代价标度（LEC 线性 vs DQMC 三次方）
-![Fig 1](figures/fig1_scaling.png)
+![Fig 1](figures/fig1_scaling.svg)
 
 ### Fig 2：稀薄极限下符号恢复
-![Fig 2](figures/fig2_sign.png)
+![Fig 2](figures/fig2_sign.svg)
 
 ### Fig 4：平带铁磁结构因子（U=0.5，经像素级提取+ED 扫描鉴别）
-![Fig 4](figures/fig4_flatband.png)
+![Fig 4](figures/fig4_flatband.svg)
 
 ## 快速开始
 
