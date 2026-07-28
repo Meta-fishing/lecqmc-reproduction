@@ -1,0 +1,109 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='560' height='214' viewBox='0 0 560 214' font-family='sans-serif'>
+<rect width='560' height='214' fill='white'/>
+<rect x='48' y='28' width='130' height='140' fill='white' stroke='black' stroke-width='0.8'/>
+<polyline points='56.1,47.2 96.3,161.6 113,160.1 136.6,160.1 146.1,159.3 169.9,158.8' fill='none' stroke='#2980b9' stroke-width='1.1' stroke-dasharray='4,2'/>
+<rect x='53.5' y='44.6' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='93.7' y='159' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='110.4' y='157.5' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='134' y='157.5' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='143.5' y='156.7' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='167.3' y='156.2' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<path d='M56.1 42.8V49.8M96.3 161.1V162.3M113 159.8V161.2M136.6 158.8V160.5M146.1 158.2V159.7M169.9 157.3V158.9' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<path d='M53.5 42.8h5.2M53.5 49.8h5.2M93.7 161.1h5.2M93.7 162.3h5.2M110.4 159.8h5.2M110.4 161.2h5.2M134 158.8h5.2M134 160.5h5.2M143.5 158.2h5.2M143.5 159.7h5.2M167.3 157.3h5.2M167.3 158.9h5.2' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<polyline points='56.1,46.3 96.3,161.7 113,160.5 136.6,159.6 146.1,159 169.9,158.1' fill='none' stroke='#c0392b' stroke-width='1.1'/>
+<circle cx='56.1' cy='46.3' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='96.3' cy='161.7' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='113' cy='160.5' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='136.6' cy='159.6' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='146.1' cy='159' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='169.9' cy='158.1' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<line x1='56.1' y1='168' x2='56.1' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='56.1' y='180' font-size='8' text-anchor='middle'>0</text>
+<line x1='96.3' y1='168' x2='96.3' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='96.3' y='180' font-size='8' text-anchor='middle'>1</text>
+<line x1='136.6' y1='168' x2='136.6' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='136.6' y='180' font-size='8' text-anchor='middle'>2</text>
+<line x1='176.9' y1='168' x2='176.9' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='176.9' y='180' font-size='8' text-anchor='middle'>3</text>
+<line x1='45' y1='168' x2='48' y2='168' stroke='black' stroke-width='0.7'/>
+<text x='43' y='170.5' font-size='8' text-anchor='end'>0.00</text>
+<line x1='45' y1='168' x2='48' y2='168' stroke='black' stroke-width='0.7'/>
+<text x='43' y='170.5' font-size='8' text-anchor='end'>0</text>
+<line x1='45' y1='28' x2='48' y2='28' stroke='black' stroke-width='0.7'/>
+<text x='43' y='30.5' font-size='8' text-anchor='end'>0.15</text>
+<text x='113' y='196' font-size='8' text-anchor='middle'>distance r</text>
+<text x='18' y='98' font-size='8' text-anchor='middle' transform='rotate(-90 18 98)'>&lt;n1 nj&gt;</text>
+<line x1='117' y1='42' x2='135' y2='42' stroke='#2980b9' stroke-width='1.1' stroke-dasharray='4,2'/>
+<rect x='123.4' y='39.4' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<text x='139' y='45' font-size='8' text-anchor='start'>ED</text>
+<line x1='117' y1='60' x2='135' y2='60' stroke='#c0392b' stroke-width='1.1'/>
+<circle cx='126' cy='60' r='3' fill='#c0392b' stroke='#c0392b'/>
+<text x='139' y='63' font-size='8' text-anchor='start'>LEC-QMC</text>
+<rect x='233' y='28' width='130' height='140' fill='white' stroke='black' stroke-width='0.8'/>
+<polyline points='241.1,45.6 281.3,161.8 298,163.3 321.6,163.3 331.1,164.1 354.9,164.5' fill='none' stroke='#2980b9' stroke-width='1.1' stroke-dasharray='4,2'/>
+<rect x='238.5' y='43' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='278.7' y='159.2' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='295.4' y='160.7' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='319' y='160.7' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='328.5' y='161.5' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='352.3' y='161.9' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<path d='M241.1 41.6V47.8M281.3 161.3V162.4M298 162.2V163.6M321.6 163V164.5M331.1 163.6V165.1M354.9 164.5V165.9' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<path d='M238.5 41.6h5.2M238.5 47.8h5.2M278.7 161.3h5.2M278.7 162.4h5.2M295.4 162.2h5.2M295.4 163.6h5.2M319 163h5.2M319 164.5h5.2M328.5 163.6h5.2M328.5 165.1h5.2M352.3 164.5h5.2M352.3 165.9h5.2' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<polyline points='241.1,44.7 281.3,161.8 298,162.9 321.6,163.7 331.1,164.4 354.9,165.2' fill='none' stroke='#c0392b' stroke-width='1.1'/>
+<circle cx='241.1' cy='44.7' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='281.3' cy='161.8' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='298' cy='162.9' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='321.6' cy='163.7' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='331.1' cy='164.4' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='354.9' cy='165.2' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<line x1='241.1' y1='168' x2='241.1' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='241.1' y='180' font-size='8' text-anchor='middle'>0</text>
+<line x1='281.3' y1='168' x2='281.3' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='281.3' y='180' font-size='8' text-anchor='middle'>1</text>
+<line x1='321.6' y1='168' x2='321.6' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='321.6' y='180' font-size='8' text-anchor='middle'>2</text>
+<line x1='361.9' y1='168' x2='361.9' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='361.9' y='180' font-size='8' text-anchor='middle'>3</text>
+<line x1='230' y1='168' x2='233' y2='168' stroke='black' stroke-width='0.7'/>
+<text x='228' y='170.5' font-size='8' text-anchor='end'>-0.00</text>
+<line x1='230' y1='155.9' x2='233' y2='155.9' stroke='black' stroke-width='0.7'/>
+<text x='228' y='158.4' font-size='8' text-anchor='end'>0</text>
+<line x1='230' y1='28' x2='233' y2='28' stroke='black' stroke-width='0.7'/>
+<text x='228' y='30.5' font-size='8' text-anchor='end'>0.04</text>
+<text x='298' y='196' font-size='8' text-anchor='middle'>distance r</text>
+<text x='203' y='98' font-size='8' text-anchor='middle' transform='rotate(-90 203 98)'>&lt;Sz1 Szj&gt;</text>
+<rect x='418' y='28' width='130' height='140' fill='white' stroke='black' stroke-width='0.8'/>
+<polyline points='426.1,44.4 466.3,152.5 483,153.9 506.6,153.9 516.1,154.6 539.9,155.1' fill='none' stroke='#2980b9' stroke-width='1.1' stroke-dasharray='4,2'/>
+<rect x='423.5' y='41.8' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='463.7' y='149.9' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='480.4' y='151.3' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='504' y='151.3' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='513.5' y='152' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<rect x='537.3' y='152.5' width='5.2' height='5.2' fill='white' stroke='#2980b9'/>
+<path d='M426.1 40.6V46.4M466.3 150V154.4M483 151.1V159.4M506.6 150.4V154.2M516.1 152.9V168M539.9 150V153.2' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<path d='M423.5 40.6h5.2M423.5 46.4h5.2M463.7 150h5.2M463.7 154.4h5.2M480.4 151.1h5.2M480.4 159.4h5.2M504 150.4h5.2M504 154.2h5.2M513.5 152.9h5.2M513.5 168h5.2M537.3 150h5.2M537.3 153.2h5.2' stroke='#c0392b' stroke-width='.9' fill='none'/>
+<polyline points='426.1,43.5 466.3,152.2 483,155.3 506.6,152.3 516.1,163.1 539.9,151.6' fill='none' stroke='#c0392b' stroke-width='1.1'/>
+<circle cx='426.1' cy='43.5' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='466.3' cy='152.2' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='483' cy='155.3' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='506.6' cy='152.3' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='516.1' cy='163.1' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<circle cx='539.9' cy='151.6' r='3.2' fill='#c0392b' stroke='#c0392b'/>
+<line x1='426.1' y1='168' x2='426.1' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='426.1' y='180' font-size='8' text-anchor='middle'>0</text>
+<line x1='466.3' y1='168' x2='466.3' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='466.3' y='180' font-size='8' text-anchor='middle'>1</text>
+<line x1='506.6' y1='168' x2='506.6' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='506.6' y='180' font-size='8' text-anchor='middle'>2</text>
+<line x1='546.9' y1='168' x2='546.9' y2='171' stroke='black' stroke-width='0.7'/>
+<text x='546.9' y='180' font-size='8' text-anchor='middle'>3</text>
+<line x1='415' y1='168' x2='418' y2='168' stroke='black' stroke-width='0.7'/>
+<text x='413' y='170.5' font-size='8' text-anchor='end'>-0.01</text>
+<line x1='415' y1='147' x2='418' y2='147' stroke='black' stroke-width='0.7'/>
+<text x='413' y='149.5' font-size='8' text-anchor='end'>0</text>
+<line x1='415' y1='28' x2='418' y2='28' stroke='black' stroke-width='0.7'/>
+<text x='413' y='30.5' font-size='8' text-anchor='end'>0.07</text>
+<text x='483' y='196' font-size='8' text-anchor='middle'>distance r</text>
+<text x='388' y='98' font-size='8' text-anchor='middle' transform='rotate(-90 388 98)'>&lt;Sx1Sxj+Sy1Syj&gt;</text>
+<text x='280' y='14' font-size='10' text-anchor='middle'>2D Hubbard L=4, Ne=2, U=7, T=0.05: LEC-QMC vs ED</text>
+</svg>
